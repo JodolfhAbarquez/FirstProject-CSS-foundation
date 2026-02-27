@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>MAJESTIC-HOTEL</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	 <header>
+      <nav class="navbar">
+        <a class="logo" href="#">𝒫𝒜𝑅𝒜𝒟𝐼𝒮𝐸 𝐻𝒪𝒯𝐸𝐿<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined"></span>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Contact us</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <section class="hero-section">
+      <div class="content">
+        <h2>𝒮𝒯𝒜𝑅𝒯 𝒴𝒪𝒰𝑅 𝒫𝒜𝑅𝒜𝒟𝐼𝒮𝐸 𝐻𝐸𝑅𝐸 𝒲𝐼𝒯𝐻 𝒰𝒮.</h2>
+        <p>
+          Discover the perfect blend of luxury, comfort, and warm hospitality at Hotel Paradise.
+        </p>
+        <button>BOOK NOW!!</button>
+      </div>
+    </section>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      // Toggle mobile menu on hamburger button click
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      // Close mobile menu on close button click
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    
+  </body>
+</html>
